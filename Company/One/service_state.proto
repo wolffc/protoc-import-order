@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package company.one;
+
+enum ServiceState {
+  SERVICE_STATE_UNSPECIFIED = 0;
+  SERVICE_STATE_RUNNING = 1;
+  SERVICE_STATE_STOPPED = 2;
+  SERVICE_STATE_DELAYED = 3;
+}

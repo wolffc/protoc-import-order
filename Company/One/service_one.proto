@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package company.one;
+import "Company/One/service_state.proto";
+
+message RequestOne {
+    string service_name = 1;
+}
+
+message ResponseOne {
+    company.one.ServiceState service_name = 1;
+}
+
+service ServiceOne {
+    rpc FooEndpoint(RequestOne) returns (ResponseOne) {}
+}
